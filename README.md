@@ -31,7 +31,6 @@ SpringBoard Data science project on analysis of 20 years of game history
       games corresponding to company: sony nintendo microsoft sega snk bandai 
       Most common words in title?
 
-
    B. How score of game related to other factors:
       Same game on different platform has the same score? If not, which platform tend to have lower score?
       How score/score phase related to different platforms, genres, and release year/ month/ day? 
@@ -43,4 +42,8 @@ SpringBoard Data science project on analysis of 20 years of game history
       The characteristics of game which has score = 10? game which has score < 5?
       What is the characteristic for games which has score <= 8.5 but a yes for editor's choice? 
    
-5. What are your deliverables? Typically, this would include code, along with a paper and/or a slide deck.   
+5. What are your deliverables? Typically, this would include code, along with a paper and/or a slide deck.  
+
+# Data Wrangling Steps
+
+Create a short document (1-2 pages) in your github describing the data wrangling steps that you undertook to clean your capstone project data set. What kind of cleaning steps did you perform? How did you deal with missing values, if any? Were there outliers, and how did you decide to handle them? This document will eventually become part of your milestone report.
