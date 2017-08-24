@@ -45,5 +45,14 @@ SpringBoard Data science project on analysis of 20 years of game history
 5. What are your deliverables? Typically, this would include code, along with a paper and/or a slide deck.  
 
 # Data Wrangling Steps
-
-Create a short document (1-2 pages) in your github describing the data wrangling steps that you undertook to clean your capstone project data set. What kind of cleaning steps did you perform? How did you deal with missing values, if any? Were there outliers, and how did you decide to handle them? This document will eventually become part of your milestone report.
+1. clean the data
+   1) check if there is any missing value --> no missing value
+      check outlier--> year 1970, stay in the dataset   
+   2) Adding "company" column by mapping platform to company which released it
+   adding "type" column by categorize the platforms by types like console, phone, PC, Portable 
+   3) Join the game data with another dataset which describe when the platform is released
+   4) plot the distribution of scores, outlier on the left side, not normally distributed, scores skewed to the left
+      summarize the data, range of the score from [0.5,10],
+      so the outliers on the left is not because of nobody reviews the game, outliers are also important in the dataset.
+   
+2. 
