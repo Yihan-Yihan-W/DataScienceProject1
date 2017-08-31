@@ -53,6 +53,7 @@ SpringBoard Data science project on analysis of 20 years of game history
    4) plot the distribution of scores, outlier on the left side, not normally distributed, scores skewed to the left
       summarize the data, range of the score from [0.5,10],
       so the outliers on the left is not because of nobody reviews the game, outliers are also important in the dataset.
+   5) Add fuzz score column by calculating the fuzzywuzzy similarity ratio between two titles(titles sorted by value), if ratio>65%, it is a series game.
    
 # Story Telling
 
