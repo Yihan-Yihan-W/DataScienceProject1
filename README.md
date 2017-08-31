@@ -65,6 +65,95 @@ The questions you asked
 The trends you investigated
 The resulting visualizations and conclusions.
 
+      Part 1: Explore number of releases
+
+      Question1: Most popular year, month, day to release a game
+      
+Dates that release most amounts of games:
+          Year 2008 : 1915 games
+          Month 11 : 2657 games
+          Day 14 : 693 games
+          Date 1999-07-06 : 73 games
+          The most popular month-day pair is 2008-11: 256 games 
+          The combination of most popular year, month and day is 2008-11-14,
+          when 28 games are relased, ranked number 6 popular date of all game history.
+Trend:
+From bar plot of number of y = releases v.s. x = release_year/release_month/release_day
+The first small peak is reach by year 2000 (4th top releases). With a slightly drop from 2000 to 2001, number of releases each year continued increasing till 2009. 2008, 2009 and 2007 are top 3 years that released most video games, indicating that game video industry is at its peak during these years. 
+
+From Heatmap, x = release_year, y = release_month, number on each small cube is number of releases
+From kdeplot, the density is more clear: 
+Year 2000-2010, September-November has relatively more releases than other times.
+Year 2007-2008, October-Novermber are peak times for game releases
+
+Number of releases continued decreasing after 2009. Within each quarter, the last month of each quarter (month 3,6,9) has most games released except for 4th quarter. The 4th quarter anomly might due to holidays and vacation in December. 
+
+It's worth noticing that November, October and December, March and December are top 5 months for releasing games. The 4th quarter has 0.347489932885906% of total releases. However, the total releases on each day of the month is similar. 
+
+      Question 2: Popular releases by type, company, genre
+Number of games releases by platform, genre, type ,and company (Top 3)
+By grouping data by different columns and count the size, calculate the relative proprotion
+Platform: 19.09% of games released on PC, 9.05% on PlayStation2, 8.75% on Xbox 360 
+Genre: 20.38% of games are action games, 10.287% sports, 8.644% shooter  
+Type: 52.4% of games released on a console,computer 18.6% and portables 18.4%
+Company: others 29.18%, Sony 27.16%, Nintendo 21.86%
+
+      Question 3: Pattern of games releases counts each genre by year
+By visulizing releases counts for each year on different genres through heatmap, we can see that:
+Year 2007, 2008 and 2009 has most releases for Action games. 
+Year 2008 is also the year of Adventure games, shooters game.   
+Year 2002 and Year 2008 tied, ranked number one on sports game genre.  
+
+      Part 2: Explore relationship of review scores of games with other factors
+      
+      Question 1: The distribution and some statistics of the review scores? Is is normally distributed?
+There are 18625 games reviewed, with mean score of 6.950459 , max score 10 and min score 0.5. There is no missing value for score columns. The distribution of review scores of games is skewed to left, with outliers on left side. IQR of review score is [6,8.2]
+
+      Question 2: Are review socres distribution same for all the platform type? Which has highest/lowest scores?
+By plotting the violin plot on calculated average score by different types of platform:
+Mobile games has highest average score (7.306)
+Arcade games has lowest average score(6.069)
+Portable games and acade games has stable scores (no outlier on both side)
+Mobile and other games tend to have both perfect reviews and worst reviews.
+Consle games and computer games tend to have worst reviews.
+
+      Question 3: Are review socres distribution same for all the platform type? Which has highest/lowest scores?
+By caluclate the mean score for different company and plot the violin plot of Review scores v.s. Platform Company:
+Games on Apple devices have the highest average review scores (7.322)
+However, Games for Apple devices tends to both get highest scores and lowest socres.
+Games on Nintendo have lowest average review socres (6.446611) 
+Games for Bandi devices very have stable performances (about [6,8])
+For all companiess, it seems that games are more likely to get below average scores.
+
+      Question 4: Any trends between review score by genre?
+Bar plot, swormplot, and voilin plot:
+Top 3 review scores genres: 1) Compilation, complition 2) Hardware 3) PUzzle, RPG 
+                   Worst 3: 1) Hunting, Action 2) Sports, Fighting 3) Ducation, Trivia
+
+The games with very high or very low average scores only has a few games released in its genre. 
+The violin plots of review score corresponding to popular genres (most games released) show that review scores 
+are roughly normally distributed with slight tail to the left (0). From the plot, sports and racing games has largest range of scores and more outliers on both sides.
+The standard deviation of review scores for Racing, Sports and Shooter games are larger than other genre's, indicating there performances are more volitile.
+
+      Question 5:  Trend of Average Review score by Year and Genre?
+line plot & Heatmap
+The average review socres continues to increase with first drop in 2000, follow by a small drop by 2002.
+The score continues to increase to 2005, and then keep decreasesing till 2008. From 2008, the score keep increasing. The lowest average scores occures in 2008.
+
+The heatmap also indicate that the average score for many genres in 2008 is lower than others.
+For Fight and action genre games, 2013 is the worst year. 
+
+      Part 3: Worst games & Perfect Games characters:
+THE WORST Games:
+32.86% of games for Nintendo falls in the range of a bad game(lower 25%)
+38.461% of games for Arcade is bad game
+33.4% of the games released in 2008 are bad games. 
+The Perfect Games:
+Total of 55 perfect games (review score = 10)
+Top platform: 18% of perfect games is designed for Game Boy Color
+Top genre: 30.9% of perfect games has genre Action, Adventure is perfect.
+Top year: Year 1999 release 20% of perfect games
+
 # Inferential Statistics
 Are there variables that are particularly significant in terms of explaining the answer to your project question? 
 Are there strong correlations between pairs of independent variables, or between an independent and a dependent variable? 
