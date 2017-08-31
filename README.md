@@ -64,3 +64,30 @@ Note including:
 The questions you asked
 The trends you investigated
 The resulting visualizations and conclusions.
+
+# Inferential Statistics
+Are there variables that are particularly significant in terms of explaining the answer to your project question? 
+Are there strong correlations between pairs of independent variables, or between an independent and a dependent variable? 
+
+      Question1: More releases = more bad games? What is the relationship between number of releases and avg. review score for each year?
+
+Null hypthosis: the slope between number of games released each year and average score for that year is zero. 
+By use scipy.stats, the leaset square regression indicate there is a negatvie relationship between two variables, however, with p-value = .19>.05, accept the null hypothesis that slope is 0. There statistical evidence that more games relaased results a poor average score.
+
+      Qustion2: Is it better that a game released for different platforms?
+By group the dataset by title and count number of platforms for each title. Calculate the average score corresponding to number of platforms. 
+
+Null hpythosis: no relationship between average score and number of platforms a game released on (slope = 0). 
+P-value =.0103, so reject the null hypothesis and conclude there is a positive relationship between two variables. Least square linear regression slope = .087, indicate a positive relationship between two variables. The more platforms released on, the higher average score.
+
+      Question3: How score varies according to difference between game releases and platform releases?
+Null hypothesis: no relationship between difference of game & console release days and score of games. 
+Fitting least square linear regression to x= difference in release days and y = score, slope is negative with p-value<.01. So reject null hypothesis and conclude that there is significant relationship between two variables. The later game released after the platform is released, the lower the score.
+
+The kdeplot shows the density of scores and difference in releases dates. Most of games are released after 500-1000 days after a particular platform is released and has a score around 8. Plotting year difference between game and platform release dates, we can see that no clear trends. However, average score decreases after 7 years of platforms released and increase at year 10,but continue decrease as years passed by.
+The bar chart shows that portable game has score less than console games before year 6. At year 6 and 7, the portable games outperform console games.
+
+      Question4: Is games in series has better performances than non-series games?
+Test the null hypothesis that two group has same mean by independent t test, p-value<.001, reject the null hypothesis and conclude there is significant difference between two groups. Game series has higher score than non-series group.Series games has average score (mean = 7.15) higher than non-series games(mean = 6.48) 
+
+Except for arcade games, series games for different types platforms has higher score than non-series games.
