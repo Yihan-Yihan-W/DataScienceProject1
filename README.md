@@ -1,3 +1,6 @@
+### Final Report
+https://docs.google.com/document/d/140We1m-18sJ0O2zY9QBA1HOXUrhN6yMoJ4Ub6jUrxTc/edit?usp=sharing
+
 # DataScienceProject1 Porposal
 SpringBoard Data science project on analysis of 20 years of game history
 
